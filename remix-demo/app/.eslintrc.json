@@ -1,0 +1,27 @@
+{
+  "extends": [
+    // "@remix-run/eslint-config",
+    // "@remix-run/eslint-config/node",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+
+  "rules": {
+    "no-unused-vars": "off",
+
+    // これはwarnにするか検討する
+    "@typescript-eslint/no-unused-vars": "error",
+
+    // onClickなどに() => voidを渡した時にエラーになる
+    // 回避策はあるが毎回書くのが面倒なのでOFFにする
+    "@typescript-eslint/no-misused-promises": "off",
+
+    // server actionsでリダイレクトだけしたい場合とかにエラー吐かれるのでOFFにする
+    "@typescript-eslint/require-await": "off"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "project": "./tsconfig.json" },
+  "plugins": ["@typescript-eslint"],
+  "root": true
+}

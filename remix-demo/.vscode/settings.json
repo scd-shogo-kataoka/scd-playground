@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "autoimport.useSemiColon": false,
+  "editor.foldingImportsByDefault": true,
+  "eslint.workingDirectories": ["./app"]
+}

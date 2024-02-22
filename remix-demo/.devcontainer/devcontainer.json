@@ -1,0 +1,17 @@
+{
+  "name": "scd-playground_remix-demo",
+  "dockerFile": "./Dockerfile",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "GitHub.copilot",
+        "steoates.autoimport",
+        "clinyong.vscode-css-modules",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "ssh-agent"
+}
